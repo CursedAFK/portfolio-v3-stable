@@ -5,19 +5,19 @@ import Sidebar from '@/components/Sidebar/Sidebar'
 import MouseStalker from '@/components/MouseStalker/MouseStalker'
 
 const openSans = Open_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-open-sans'
+	subsets: ['latin'],
+	display: 'swap',
+	variable: '--font-open-sans'
 })
 
 const App = ({ Component, pageProps }: AppProps) => {
-  return (
-    <div className={`${openSans.variable}`}>
-      <Sidebar />
-      <Component {...pageProps} />
-      <MouseStalker />
-    </div>
-  )
+	return (
+		<div className={`${openSans.variable}`}>
+			<Sidebar />
+			<Component {...pageProps} />
+			<MouseStalker />
+		</div>
+	)
 }
 
 export default App
